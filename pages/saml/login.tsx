@@ -8,13 +8,13 @@ export default function Login() {
   const { id, audience, acsUrl, providerName, relayState } = router.query;
 
   const [state, setState] = useState({
-    username: 'jackson.doe',
+    username: '',
     domain: 'immersivelabs.com',
     acsUrl: 'https://jackson-demo.boxyhq.com/api/oauth/saml',
     audience: 'https://saml.boxyhq.com',
-    uid: 'mock-10001',
-    firstName: 'Jackson',
-    lastName: 'Doe',
+    uid: '',
+    firstName: '',
+    lastName: '',
     teams: '',
     organisationId: ''
   });
@@ -92,7 +92,7 @@ export default function Login() {
                     <div className='col-span-2'>
                       <div className='form-control'>
                         <label className='label'>
-                          <span className='label-text font-bold'>ACS URL</span>
+                          <span className='label-text font-bold'>ACS URL *</span>
                         </label>
                         <input
                           type='text'
@@ -111,7 +111,7 @@ export default function Login() {
                       </div>
                       <div className='form-control col-span-2'>
                         <label className='label'>
-                          <span className='label-text font-bold'>Audience</span>
+                          <span className='label-text font-bold'>Audience *</span>
                         </label>
                         <input
                           type='text'
@@ -129,7 +129,7 @@ export default function Login() {
                   <div className='col-span-2'>
                     <div className='form-control'>
                       <label className='label'>
-                        <span className='label-text font-bold'>Email</span>
+                        <span className='label-text font-bold'>Email *</span>
                         <span className='label-text-alt'>urn:mace:dir:attribute-def:email</span>
                       </label>
                       <div className='grid grid-cols-2 gap-y-1 gap-x-5'>
@@ -162,7 +162,7 @@ export default function Login() {
                   <div className='col-span-2'>
                     <div className='form-control'>
                       <label className='label'>
-                        <span className='label-text font-bold'>First Name</span>
+                        <span className='label-text font-bold'>First Name *</span>
                         <span className='label-text-alt'>urn:mace:dir:attribute-def:first-name</span>
                       </label>
                       <input
@@ -181,7 +181,7 @@ export default function Login() {
                   <div className='col-span-2'>
                     <div className='form-control'>
                       <label className='label'>
-                        <span className='label-text font-bold'>Last Name</span>
+                        <span className='label-text font-bold'>Last Name *</span>
                         <span className='label-text-alt'>urn:mace:dir:attribute-def:last-name</span>
                       </label>
                       <input
@@ -200,7 +200,7 @@ export default function Login() {
                   <div className='col-span-2'>
                     <div className='form-control'>
                       <label className='label'>
-                        <span className='label-text font-bold'>Uid</span>
+                        <span className='label-text font-bold'>Uid *</span>
                         <span className='label-text-alt'>urn:mace:dir:attribute-def:uid</span>
                       </label>
                       <input
@@ -257,7 +257,7 @@ export default function Login() {
                       />
                     </div>
                     <label className='label'>
-                      <span className='label-text-alt'>Optional. Ex: <i>immersive-labs</i></span>
+                      <span className='label-text-alt'>Optional. Ex: <i>immersivelabs</i></span>
                     </label>
                   </div>
                   <button className='btn btn-primary col-span-2 block'>Sign In</button>
