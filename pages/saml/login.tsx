@@ -257,7 +257,7 @@ export default function Login() {
                       />
                     </div>
                     <label className='label'>
-                      <span className='label-text-alt'>Optional. Ex: <i>immersive-labs</i></span>
+                      <span className='label-text-alt'>Optional. Ex: <i>immersivelabs</i></span>
                     </label>
                   </div>
                   <button className='btn btn-primary col-span-2 block'>Sign In</button>
